@@ -82,7 +82,7 @@ public class WhatsappRepository {
     public void createUser(String name,String mobno) throws Exception{
 
             if(userMobile.contains(mobno)){
-                throw new Exception("User allready exists");
+                throw new Exception("User already exists");
             }
             else{
                 User user = new User(name,mobno);
